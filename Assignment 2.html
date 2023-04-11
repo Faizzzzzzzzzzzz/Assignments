@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+
+    <h1 id="heading">This is Heading</h1>
+    <script>
+      // Ex 1
+
+      //   function addClosure(numToAdd) {
+      //     return function (number) {
+      //       return number + numToAdd;
+      //     };
+      //   }
+
+      //   const addFive = addClosure(5);
+
+      //   console.log(addFive(20));
+      //   console.log(addFive(25));
+
+      // Ex 2
+
+      //   function searchNum(array, value) {
+      //     if (array.length === 0) {
+      //       return false;
+      //     }
+
+      //     if (array[0] === value) {
+      //       return true;
+      //     }
+      //     return searchNum(array.slice(1), value);
+      //   }
+
+      //   const Arraynum = [1, 2, 3, 4, 5];
+      //   console.log(searchNum(Arraynum, 2));
+      //   console.log(searchNum(Arraynum, 8));
+
+      // Ex 3
+
+      //   function addPara(text) {
+      //     const newPara = document.createElement("p");
+
+      //     newPara.textContent = text;
+
+      //     const lastElement = document.body.lastElementChild;
+
+      //     document.body.insertBefore(newPara, lastElement.nextSibling);
+      //   }
+
+      //   addPara("This is some text for the new paragraph element.");
+
+      // EX 4
+
+      //   function addListItem(text) {
+      //     const newListItem = document.createElement("li");
+
+      //     newListItem.textContent = text;
+
+      //     const unorderList = document.querySelector("ul");
+
+      //     unorderList.appendChild(newListItem);
+      //   }
+
+      //   addListItem("This is a new list item.");
+
+      // EX 5
+
+      //   function changeBackgroundColor(element, color) {
+      //     element.style.backgroundColor = color;
+      //   }
+
+      //   const element = document.getElementById("heading");
+      //   changeBackgroundColor(element, "lightgreen");
+
+      //   EX 6
+
+      //   function saveObjectToLocalStorage(key, object) {
+      //     const objectString = JSON.stringify(object);
+
+      //     localStorage.setItem(key, objectString);
+      //   }
+
+      //   const myObject = { name: "Faiz", age: 22, city: "Dadu" };
+      //   saveObjectToLocalStorage("myObjectKey", myObject);
+
+      //   EX 7
+
+      //   function getObjectFromLocalStorage(key) {
+      //     const objectString = localStorage.getItem(key);
+
+      //     return JSON.parse(objectString);
+      //   }
+
+      //   const myObject = getObjectFromLocalStorage("myObjectKey");
+
+      // EX 8
+
+      // function saveObjectPropertiesToLocalStorage(object) {
+      //   for (const property in object) {
+      //     localStorage.setItem(property, object[property]);
+      //   }
+
+      //   const retrievedObject = {};
+
+      //   for (const property in object) {
+      //     const propertyValue = localStorage.getItem(property);
+
+      //     retrievedObject[property] = propertyValue;
+      //   }
+
+      //   return retrievedObject;
+      // }
+
+      // const myObject = { name: "Faiz", age: 22, city: "Dadu" };
+      // const retrievedObject = saveObjectPropertiesToLocalStorage(myObject);
+    </script>
+  </body>
+</html>
